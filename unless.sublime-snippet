@@ -3,6 +3,6 @@
 ${0}
 {{/unless}}]]></content>
   <tabTrigger>un</tabTrigger>
-  <scope>text.html.handlebars,text.html.basic source.js.embedded.html, text.html.twig source.js.embedded.html</scope>
-  <description>unless(handlebars)</description>
+  <scope>text.html.dust,text.html.basic source.js.embedded.html, text.html.twig source.js.embedded.html</scope>
+  <description>unless(dust)</description>
 </snippet>

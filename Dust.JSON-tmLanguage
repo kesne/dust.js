@@ -1,5 +1,5 @@
 {
-    "name": "Handlebars", 
+    "name": "dust", 
     "repository": {
         "html_tags": {
             "patterns": [
@@ -311,18 +311,18 @@
         "end_block": {
             "begin": "(\\{~?/)([a-zA-Z0-9_\\.-]+)\\s*",
             "end": "(~?\\})",
-            "name": "meta.function.block.end.handlebars", 
+            "name": "meta.function.block.end.dust", 
             "endCaptures": {
                 "1": {
-                    "name": "support.constant.handlebars"
+                    "name": "support.constant.dust"
                 }
             }, 
             "beginCaptures": {
                 "1": {
-                    "name": "support.constant.handlebars"
+                    "name": "support.constant.dust"
                 }, 
                 "2": {
-                    "name": "support.constant.handlebars"
+                    "name": "support.constant.dust"
                 }
             }, 
             "patterns": []
@@ -346,7 +346,7 @@
                 {
                     "patterns": [
                         {
-                            "name": "keyword.annotation.handlebars", 
+                            "name": "keyword.annotation.dust", 
                             "match": "@\\w*"
                         }, 
                         {
@@ -355,7 +355,7 @@
                     ], 
                     "begin": "\\{![^<]", 
                     "end": "\\}", 
-                    "name": "comment.block.handlebars"
+                    "name": "comment.block.dust"
                 }, 
                 {
                     "captures": {
@@ -380,7 +380,7 @@
                 {
                     "patterns": [
                         {
-                            "name": "keyword.annotation.handlebars", 
+                            "name": "keyword.annotation.dust", 
                             "match": "@\\w*"
                         }, 
                         {
@@ -389,7 +389,7 @@
                     ], 
                     "begin": "\\{!--", 
                     "end": "--\\}", 
-                    "name": "comment.block.handlebars"
+                    "name": "comment.block.dust"
                 }, 
                 {
                     "captures": {
@@ -432,21 +432,21 @@
         "block_helper": {
             "begin": "(\\{~?\\#)([-a-zA-Z0-9_\\./]+)\\s?+(@?[-a-zA-Z0-9_\\./]+)*",
             "end": "(~?\\})",
-            "name": "meta.function.block.start.handlebars", 
+            "name": "meta.function.block.start.dust", 
             "endCaptures": {
                 "1": {
-                    "name": "support.constant.handlebars"
+                    "name": "support.constant.dust"
                 }
             }, 
             "beginCaptures": {
                 "1": {
-                    "name": "support.constant.handlebars"
+                    "name": "support.constant.dust"
                 }, 
                 "3": {
-                    "name": "variable.parameter.handlebars"
+                    "name": "variable.parameter.dust"
                 }, 
                 "2": {
-                    "name": "support.constant.handlebars"
+                    "name": "support.constant.dust"
                 }
             }, 
             "patterns": [
@@ -458,7 +458,7 @@
         "string-single-quoted": {
             "begin": "'", 
             "end": "'", 
-            "name": "string.quoted.single.handlebars", 
+            "name": "string.quoted.single.dust", 
             "endCaptures": {
                 "0": {
                     "name": "punctuation.definition.string.end.html"
@@ -511,18 +511,18 @@
         "partial_and_var": {
             "begin": "(\\{~?\\{*(>|!<)*)\\s*(@?[-a-zA-Z0-9_\\./]+)*",
             "end": "(~?\\}\\}*)",
-            "name": "meta.function.inline.other.handlebars", 
+            "name": "meta.function.inline.other.dust", 
             "beginCaptures": {
                 "1": {
-                    "name": "support.constant.handlebars"
+                    "name": "support.constant.dust"
                 }, 
                 "3": {
-                    "name": "variable.parameter.handlebars"
+                    "name": "variable.parameter.dust"
                 }
             }, 
             "endCaptures": {
                 "1": {
-                    "name": "support.constant.handlebars"
+                    "name": "support.constant.dust"
                 }
             },
             "patterns": [
@@ -534,7 +534,7 @@
         "string-double-quoted": {
             "begin": "\"", 
             "end": "\"", 
-            "name": "string.quoted.double.handlebars", 
+            "name": "string.quoted.double.dust", 
             "beginCaptures": {
                 "0": {
                     "name": "punctuation.definition.string.begin.html"
@@ -567,7 +567,7 @@
             ]
         },
         "inline_script": {
-            "begin": "(?:^\\s+)?(<)((?i:script))\\b(?:.*(type)=([\"'](?:text/x-handlebars-template|text/x-handlebars|text/template)[\"']))(?![^>]*/>)",  
+            "begin": "(?:^\\s+)?(<)((?i:script))\\b(?:.*(type)=([\"'](?:text/x-dust-template|text/x-dust|text/template)[\"']))(?![^>]*/>)",  
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.definition.tag.html"
@@ -588,7 +588,7 @@
                     "name": "punctuation.definition.tag.html"
                 }
             }, 
-            "name": "source.handlebars.embedded.html", 
+            "name": "source.dust.embedded.html", 
             "patterns": [
                 {
                     "include": "#tag-stuff"
@@ -695,7 +695,7 @@
             ]
         }
     }, 
-    "scopeName": "text.html.handlebars", 
+    "scopeName": "text.html.dust", 
     "patterns": [
         {
             "include": "#yfm"
@@ -726,8 +726,8 @@
         }
     ], 
     "fileTypes": [
-        "handlebars", 
-        "handlebars.html", 
+        "dust", 
+        "dust.html", 
         "hbr", 
         "hbrs", 
         "hbs", 

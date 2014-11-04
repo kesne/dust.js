@@ -59,14 +59,14 @@
 					<key>end</key>
 					<string>--\}</string>
 					<key>name</key>
-					<string>comment.block.handlebars</string>
+					<string>comment.block.dust</string>
 					<key>patterns</key>
 					<array>
 						<dict>
 							<key>match</key>
 							<string>@\w*</string>
 							<key>name</key>
-							<string>keyword.annotation.handlebars</string>
+							<string>keyword.annotation.dust</string>
 						</dict>
 						<dict>
 							<key>include</key>
@@ -110,17 +110,17 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>support.constant.handlebars</string>
+					<string>support.constant.dust</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>support.constant.handlebars</string>
+					<string>support.constant.dust</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>variable.parameter.handlebars</string>
+					<string>variable.parameter.dust</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -130,11 +130,11 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>support.constant.handlebars</string>
+					<string>support.constant.dust</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.function.block.start.handlebars</string>
+			<string>meta.function.block.start.dust</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -153,14 +153,14 @@
 					<key>end</key>
 					<string>\}</string>
 					<key>name</key>
-					<string>comment.block.handlebars</string>
+					<string>comment.block.dust</string>
 					<key>patterns</key>
 					<array>
 						<dict>
 							<key>match</key>
 							<string>@\w*</string>
 							<key>name</key>
-							<string>keyword.annotation.handlebars</string>
+							<string>keyword.annotation.dust</string>
 						</dict>
 						<dict>
 							<key>include</key>
@@ -204,12 +204,12 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>support.constant.handlebars</string>
+					<string>support.constant.dust</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>support.constant.handlebars</string>
+					<string>support.constant.dust</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -219,11 +219,11 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>support.constant.handlebars</string>
+					<string>support.constant.dust</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.function.block.end.handlebars</string>
+			<string>meta.function.block.end.dust</string>
 			<key>patterns</key>
 			<array/>
 		</dict>
@@ -721,7 +721,7 @@
 		<key>inline_script</key>
 		<dict>
 			<key>begin</key>
-			<string>(?:^\s+)?(&lt;)((?i:script))\b(?:.*(type)=(["'](?:text/x-handlebars-template|text/x-handlebars|text/template)["']))(?![^&gt;]*/&gt;)</string>
+			<string>(?:^\s+)?(&lt;)((?i:script))\b(?:.*(type)=(["'](?:text/x-dust-template|text/x-dust|text/template)["']))(?![^&gt;]*/&gt;)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -756,7 +756,7 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>source.handlebars.embedded.html</string>
+			<string>source.dust.embedded.html</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -824,12 +824,12 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>support.constant.handlebars</string>
+					<string>support.constant.dust</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>variable.parameter.handlebars</string>
+					<string>variable.parameter.dust</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -839,11 +839,11 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>support.constant.handlebars</string>
+					<string>support.constant.dust</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.function.inline.other.handlebars</string>
+			<string>meta.function.inline.other.dust</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -889,7 +889,7 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.quoted.double.handlebars</string>
+			<string>string.quoted.double.dust</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -941,7 +941,7 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.quoted.single.handlebars</string>
+			<string>string.quoted.single.dust</string>
 			<key>patterns</key>
 			<array>
 				<dict>

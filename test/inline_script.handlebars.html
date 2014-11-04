@@ -32,7 +32,7 @@ categories:
 
 	<div data-attribute_weird="yes"></div>
 
-	<script data-partial="nav" type="text/x-handlebars-template">
+	<script data-partial="nav" type="text/x-dust-template">
 		<ul>
 			{{#each route}}
 				<li><button data-app-route="{{ path }}">{{{ name }}}</button></li>
@@ -40,7 +40,7 @@ categories:
 		</ul>
 	</script>
 
-	<script type="text/x-handlebars-template" id="template-gallery">
+	<script type="text/x-dust-template" id="template-gallery">
 		<div class="{{class}}" id="{{myId}}">
 			<div class="content_container">
 				{{{content}}}
@@ -73,7 +73,7 @@ categories:
 		</div>
 	</script>
 
-	<script type="text/x-handlebars" id="template-small-second">
+	<script type="text/x-dust" id="template-small-second">
 		<div class="{{class}}" id="{{myId}}">
 			<div class="content_container">
 				{{{content}}}
