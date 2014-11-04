@@ -309,8 +309,8 @@
             ]
         }, 
         "end_block": {
-            "begin": "(\\{\\{~?/)([a-zA-Z0-9_\\.-]+)\\s*",
-            "end": "(~?\\}\\})",
+            "begin": "(\\{~?/)([a-zA-Z0-9_\\.-]+)\\s*",
+            "end": "(~?\\})",
             "name": "meta.function.block.end.handlebars", 
             "endCaptures": {
                 "1": {
@@ -353,8 +353,8 @@
                             "include": "#comments"
                         }
                     ], 
-                    "begin": "\\{\\{![^<]", 
-                    "end": "\\}\\}", 
+                    "begin": "\\{![^<]", 
+                    "end": "\\}", 
                     "name": "comment.block.handlebars"
                 }, 
                 {
@@ -387,8 +387,8 @@
                             "include": "#comments"
                         }
                     ], 
-                    "begin": "\\{\\{!--", 
-                    "end": "--\\}\\}", 
+                    "begin": "\\{!--", 
+                    "end": "--\\}", 
                     "name": "comment.block.handlebars"
                 }, 
                 {
@@ -430,8 +430,8 @@
             ]
         }, 
         "block_helper": {
-            "begin": "(\\{\\{~?\\#)([-a-zA-Z0-9_\\./]+)\\s?+(@?[-a-zA-Z0-9_\\./]+)*",
-            "end": "(~?\\}\\})",
+            "begin": "(\\{~?\\#)([-a-zA-Z0-9_\\./]+)\\s?+(@?[-a-zA-Z0-9_\\./]+)*",
+            "end": "(~?\\})",
             "name": "meta.function.block.start.handlebars", 
             "endCaptures": {
                 "1": {
@@ -509,8 +509,8 @@
             "match": "\\\\\""
         },
         "partial_and_var": {
-            "begin": "(\\{\\{~?\\{*(>|!<)*)\\s*(@?[-a-zA-Z0-9_\\./]+)*",
-            "end": "(~?\\}\\}\\}*)",
+            "begin": "(\\{~?\\{*(>|!<)*)\\s*(@?[-a-zA-Z0-9_\\./]+)*",
+            "end": "(~?\\}\\}*)",
             "name": "meta.function.inline.other.handlebars", 
             "beginCaptures": {
                 "1": {
@@ -735,5 +735,5 @@
         "template", 
         "tmpl"
     ], 
-    "uuid": "70E91676-DE0A-4266-A2B9-3AD2E535E484"
+    "uuid": "a1689429-30a0-40d6-9dd7-aa6750688080"
 }

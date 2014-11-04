@@ -4,17 +4,10 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<string>handlebars</string>
-		<string>handlebars.html</string>
-		<string>hbr</string>
-		<string>hbrs</string>
-		<string>hbs</string>
-		<string>mustache</string>
-		<string>template</string>
-		<string>tmpl</string>
+		<string>dust</string>
 	</array>
 	<key>name</key>
-	<string>Handlebars</string>
+	<string>Dust</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -62,9 +55,9 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>\{\{!--</string>
+					<string>\{!--</string>
 					<key>end</key>
-					<string>--\}\}</string>
+					<string>--\}</string>
 					<key>name</key>
 					<string>comment.block.handlebars</string>
 					<key>patterns</key>
@@ -111,7 +104,7 @@
 		<key>block_helper</key>
 		<dict>
 			<key>begin</key>
-			<string>(\{\{~?\#)([-a-zA-Z0-9_\./]+)\s?+(@?[-a-zA-Z0-9_\./]+)*</string>
+			<string>(\{\#)([-a-zA-Z0-9_\./]+)\s?+(@?[-a-zA-Z0-9_\./]+)*</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -131,7 +124,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(~?\}\})</string>
+			<string>(~?\})</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
@@ -156,9 +149,9 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>\{\{![^&lt;]</string>
+					<string>\{![^&lt;]</string>
 					<key>end</key>
-					<string>\}\}</string>
+					<string>\}</string>
 					<key>name</key>
 					<string>comment.block.handlebars</string>
 					<key>patterns</key>
@@ -205,7 +198,7 @@
 		<key>end_block</key>
 		<dict>
 			<key>begin</key>
-			<string>(\{\{~?/)([a-zA-Z0-9_\.-]+)\s*</string>
+			<string>(\{~?/)([a-zA-Z0-9_\.-]+)\s*</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -220,7 +213,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(~?\}\})</string>
+			<string>(~?\})</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
@@ -825,7 +818,7 @@
 		<key>partial_and_var</key>
 		<dict>
 			<key>begin</key>
-			<string>(\{\{~?\{*(&gt;|!&lt;)*)\s*(@?[-a-zA-Z0-9_\./]+)*</string>
+			<string>(\{~?\{*(&gt;|!&lt;)*)\s*(@?[-a-zA-Z0-9_\./]+)*</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -840,7 +833,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(~?\}\}\}*)</string>
+			<string>(~?\}\}*)</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
@@ -1096,8 +1089,8 @@
 		</dict>
 	</dict>
 	<key>scopeName</key>
-	<string>text.html.handlebars</string>
+	<string>text.dust</string>
 	<key>uuid</key>
-	<string>70E91676-DE0A-4266-A2B9-3AD2E535E484</string>
+	<string>a1689429-30a0-40d6-9dd7-aa6750688080/string>
 </dict>
 </plist>
